@@ -48,6 +48,8 @@ py --version
 python3 --version
 ````
 
+Clone this repository and navigate to its directory.
+
 Create a virtual environment for the project to avoid issues with dependencies:
 
 ```shell
