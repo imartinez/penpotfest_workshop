@@ -80,6 +80,8 @@ py -m pip install -r requirements.txt
 python3 -m pip install -r requirements.txt
 ```
 
+Important: if you get an error during requirements installation, read the Troubleshooting section at the bottom of this file!
+
 Copy the `example.env` template into `.env`
 ```shell
 cp example.env .env
@@ -224,7 +226,7 @@ Selecting the right local models and the power of `LangChain` you can run the en
 - `ingest.py` uses `LangChain` tools to parse the document and create embeddings locally using `HuggingFaceEmbeddings` (`SentenceTransformers`). It then stores the result in a local vector database using `Chroma` vector store.
 - `privateGPT.py` uses a local LLM based on `GPT4All-J` or `LlamaCpp` to understand questions and create answers. The context for the answers is extracted from the local vector store using a similarity search to locate the right piece of context from the docs.
 
-# System Requirements
+# Troubleshooting
 
 ## Python Version
 To use this software, you must have Python 3.10 or later installed. Earlier versions of Python will not compile.
