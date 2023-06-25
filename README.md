@@ -136,6 +136,8 @@ source env/bin/activate
 
 ## 1. Ingesting the documents
 
+![ingest_flow](https://github.com/imartinez/penpotfest_workshop/assets/721666/6663763a-0b25-433b-85cd-e281c200d9fc)
+
 This repo uses a PDF export of [penpot's user guide](https://help.penpot.app/user-guide/) as an example.
 
 If you want to use your own documents, delete all the contents of `source_documents` directory and put any and all your files there instead.
@@ -188,6 +190,9 @@ Note: Every time you want to start from an empty database, delete the `db` folde
 During the ingest process no data leaves your local environment. You can ingest without an internet connection!
 
 ## 2. Ask questions to your documents, locally!
+
+![privateGPT_flow](https://github.com/imartinez/penpotfest_workshop/assets/721666/4bebe9ef-4f36-4e6c-928d-b425c75eee9d)
+
 In order to ask a question, run a command like:
 
 ```shell
