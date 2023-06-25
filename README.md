@@ -231,6 +231,9 @@ Selecting the right local models and the power of `LangChain` you can run the en
 ## Python Version
 To use this software, you must have Python 3.10 or later installed. Earlier versions of Python will not compile.
 
+## ModuleNotFoundError on Windows
+Depending on your installation of Python, you may need to use `py` or `python` to run the different scripts. If one of the two fails with `ModuleNotFoundError`, try the other one.
+
 ## C++ Compiler
 If you encounter an error while building a wheel during the `pip install` process, you may need to install a C++ compiler on your computer.
 
