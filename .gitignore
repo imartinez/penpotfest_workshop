@@ -1,9 +1,6 @@
 # OSX
 .DS_STORE
 
-# Models
-models/
-
 # Local Chroma db
 .chroma/
 db/
