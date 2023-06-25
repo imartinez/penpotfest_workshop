@@ -35,8 +35,8 @@ persist_directory = os.environ.get('PERSIST_DIRECTORY')
 source_directory = os.environ.get('SOURCE_DIRECTORY', 'source_documents')
 models_directory = os.environ.get('MODELS_DIRECTORY')
 embeddings_model_name = os.environ.get('EMBEDDINGS_MODEL_NAME')
-chunk_size = os.environ.get('CHUNK_SIZE')
-chunk_overlap = os.environ.get('CHUNK_OVERLAP')
+chunk_size = int(os.environ.get('CHUNK_SIZE', 350))
+chunk_overlap = int(os.environ.get('CHUNK_OVERLAP', 35))
 
 
 # Custom document loaders
