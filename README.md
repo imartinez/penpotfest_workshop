@@ -36,7 +36,7 @@ Built with [LangChain](https://github.com/hwchase17/langchain), [GPT4All](https:
 Complete thhe setup and models download ahead of the workshop
 
 ## Environment setup
-Note: This tool requires a rather powerful CPU and RAM. Old or less powerful computers can take minutes to provide an answer to each question. A Mac M1 2020 will provide answers in seconds. 
+Note: This tool requires a rather powerful CPU and RAM. Old or less powerful computers can take minutes to provide an answer to each question. A Mac M1 2020 with 16GB RAM will provide answers less than a minute. 
 
 Clone this repository and navigate to the privateGPT folder.
 
@@ -89,7 +89,7 @@ Copy the `example.env` template into `.env`
 cp example.env .env
 ```
 
-Note: the LLM model specified in `.env` (`nous-hermes-13b.ggmlv3.q4_0.bin`) is a relatively complex model: very good performance but also resource-intensive. If you are running on a slow computer, with few RAM, edit `.env` and set `LLM_MODEL_NAME=ggml-gpt4all-j-v1.3-groovy.bin` to use a smaller model.
+Note: the LLM model specified in `.env` (`nous-hermes-13b.ggmlv3.q4_0.bin`) is a relatively complex model: very good performance but also resource-intensive. If you are running on a slow computer, with few RAM, edit `.env` and set `LLM_MODEL_NAME=ggml-gpt4all-j-v1.3-groovy.bin` to use a smaller model and `MODEL_N_BATCH=8` to speed up inference (losing quality).
 
 ## Models download
 There are two models used in this tool: an embeddings model and a LLM model. 
