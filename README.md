@@ -87,6 +87,8 @@ Copy the `example.env` template into `.env`
 cp example.env .env
 ```
 
+Note: the LLM model specified in `.env` (`nous-hermes-13b.ggmlv3.q4_0.bin`) is a relatively complex model: very good performance but also resource-intensive. If you are running on a slow computer, with few RAM, edit `.env` and set `LLM_MODEL_NAME=ggml-gpt4all-j-v1.3-groovy.bin` to use a smaller model.
+
 ## Models download
 There are two models used in this tool: an embeddings model and a LLM model. 
 You'll need around 8GB free space in your local hard drive.
