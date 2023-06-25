@@ -87,7 +87,7 @@ cp example.env .env
 
 ## Models download
 There are two models used in this tool: an embeddings model and a LLM model. 
-You'll need around 4GB free space in your local hard drive.
+You'll need around 8GB free space in your local hard drive.
 
 Run the `download_models.py` script. It will download both models to the folder specified in the `MODELS_DIRECTORY` variable in `.env` file (defaults to `./models` directory). It will also validate the models are working:
 
