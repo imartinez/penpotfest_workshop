@@ -36,6 +36,8 @@ Built with [LangChain](https://github.com/hwchase17/langchain), [GPT4All](https:
 Complete thhe setup and models download ahead of the workshop
 
 ## Environment setup
+Note: This tool requires a rather powerful CPU and RAM. Old or less powerful computers can take minutes to provide an answer to each question. A Mac M1 2020 will provide answers in seconds. 
+
 Clone this repository and navigate to the privateGPT folder.
 
 Make sure you have Python 3.10 or later installed.
