@@ -89,7 +89,7 @@ Copy the `example.env` template into `.env`
 cp example.env .env
 ```
 
-Important note: the LLM model specified in `.env` (`nous-hermes-13b.ggmlv3.q4_0.bin`) is a relatively complex model: very good performance (specially on Mac M1/M2) but also resource-intensive. If you are running on a slow computer, with few RAM, or just want to make inference time lower, edit `.env` and set `LLM_MODEL_NAME=ggml-gpt4all-j-v1.3-groovy.bin` to use a smaller model and `MODEL_N_BATCH=8` to speed up inference even more (losing a bit of quality in the answers).
+Note: the default LLM model specified in `.env` (`LLM_MODEL_NAME=ggml-gpt4all-j-v1.3-groovy.bin`) is a relatively simple model: good performance on most CPUs but can sometimes hallucinate or provide not great answers. If you are running on a powerful computer, specially on a Mac M1/M2, you can try a way better model by editing `.env` and setting `LLM_MODEL_NAME=nous-hermes-13b.ggmlv3.q4_0.bin`; you'll need to set `MODEL_N_BATCH=1` to make it work. Inference time is higher (~1min/answer on a M1) but the result is on par with GPT3.5!
 
 ## Models download
 There are two models used in this tool: an embeddings model and a LLM model. 
