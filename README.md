@@ -33,7 +33,7 @@ Can I invite my team to use Penpot and collaborate?
 Built with [LangChain](https://github.com/hwchase17/langchain), [GPT4All](https://github.com/nomic-ai/gpt4all), [LlamaCpp](https://github.com/ggerganov/llama.cpp), [Chroma](https://www.trychroma.com/) and [SentenceTransformers](https://www.sbert.net/).
 
 # Before the workshop
-Complete thhe setup and models download ahead of the workshop
+Complete the setup and models download ahead of the workshop
 
 ## Environment setup
 Note: This tool requires a rather powerful CPU and RAM. Old or less powerful computers can take minutes to provide an answer to each question. A Mac M1 2020 with 16GB RAM will provide answers less than a minute. 
